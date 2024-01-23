@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""it retrieves an element from a list like in C"""
+""" retrieves an element from a list like in C"""
 
 def element_at(my_list, idx):
     if idx < 0:
