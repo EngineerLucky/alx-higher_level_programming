@@ -1,14 +1,13 @@
 #!/usr/bin/python3
+from magic_calculation_102 import add, sub
+
 
 def magic_calculation(a, b):
-    """bytecode provided."""
-    from magic_calculation_102 import add, sub
-
     if a < b:
-        p = add(a, b)
+        c = add(a, b)
         for i in range(4, 6):
-            p = add(p, i)
-        return (p)
-
+            c = add(c, i)
+        return (c)
     else:
-        return(sub(a, b))
+        return sub(a, b)
+
