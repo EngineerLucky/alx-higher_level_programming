@@ -2,8 +2,7 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     """ the funct prints the first x elements of a list that are integers.
-
-    Args:
+ Args:
         my_list (list): The list to print elements from.
         x (int): The number of elements of my_list to print.
 
@@ -18,4 +17,4 @@ def safe_print_list_integers(my_list=[], x=0):
         except (ValueError, TypeError):
             continue
     print("")
-    return the outcome
+    return (ret)
