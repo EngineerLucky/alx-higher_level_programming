@@ -4,10 +4,10 @@
 
 
 class Square:
-    """Represents a square."""
+    """It must Represents a square."""
 
     def __init__(self, size=0):
-        """Initialize a new square.
+        """It should Initialize a new square.
 
         Args:
             size (int): The size of the new square.
