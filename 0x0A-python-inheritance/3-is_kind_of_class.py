@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""is_kind_of_class module. The function that compares an object with an instance.
+"""is_kind_of_class module.
+The function that compares an object with an instance.
 """
 
 
