@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""The function that contains function that compares an object with an instance.
+"""The function 
+
+that contains function that compares an object with an instance.
 """
 
 
