@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""The write_file Contains 
-
-a function that writes a text file.
+"""The write_file Contains a function that writes a text file.
 """
 
 
@@ -11,4 +9,4 @@ def write_file(filename="", text=""):
     returns the number of characters written.
     """
     with open(filename, 'w') as f:
-        return f.write(text) 
+        return f.write(text)
