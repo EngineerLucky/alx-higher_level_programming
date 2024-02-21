@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""The file Contains a function that writes a text file.
+"""The write_file Contains a function that writes a text file.
 """
 
 
