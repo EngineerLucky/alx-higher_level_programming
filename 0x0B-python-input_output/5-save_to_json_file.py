@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""The function save_to_json_file contains a function that writes an Object to a text file.
+"""The function save_to_json_file contains 
+
+a function that writes an Object to a text file.
 """
 import json
 
