@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""The function class_to_json module Contains a function that returns a dictionary.
+"""The function class_to_json module Contains
+
+a function that returns a dictionary.
 """
 
 
