@@ -10,7 +10,8 @@ request.get(urllink, (err, response, body) => {
   } else {
     const content = JSON.parse(body);
     const characters = content.characters;
-    for (const character of characters) {
+// console.log(characters);
+	  for (const character of characters) {
       request.get(character, (err, response, body) => {
         if (err) {
           console.log(err);
