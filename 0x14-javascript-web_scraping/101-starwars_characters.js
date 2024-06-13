@@ -1,19 +1,25 @@
 #!/usr/bin/node
 
 const request = require('request');
-const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
+const id = process.argv[2];
+const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
-request.get(url, async (error, res, body) => {
-  if (error) console.log(error);
-  else {
-    for (const character of JSON.parse(body).characters) {
-      const name = await new Jedi((resolve, reject) => {
-        request.get(character, (error, res, body) => {
-          if (error) reject(error);
-          else resolve(JSON.parse(body).name);
-        });
+request.get(url, (error, response, body) => {
+  if (error) {
+    console.log(error);
+  } else {
+    const content = JSON.parse(body);
+    const characters = content.characters;
+    // console.log(characters);
+    for (const character of characters) {
+      request.get(character, (error, response, body) => {
+        if (error) {
+          console.log(error);
+        } else {
+          const names = JSON.parse(body);
+          console.log(names.name);
+        }
       });
-      console.log(name);
     }
   }
 });
